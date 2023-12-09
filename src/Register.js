@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import validation from './RegisterValidation';
 import { useState } from 'react';
 import axios from 'axios'
+import './App.css';
 
 function Register() {
 
@@ -33,8 +34,8 @@ function Register() {
   }
 
   return (
-    <div className='d-flex justify-content-center align-items-center bg-primary vh-100'>
-      <div className='bg-white p-3 rounded w-25'>
+    <div className='d-flex justify-content-center align-items-center vh-100 background'>
+      <div className='p-3 rounded w-25 form-bg'>
         <h2>Sign-Up</h2>
         <form action="" onSubmit={handleSubmit}>
             <div className='mb-3'>

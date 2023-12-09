@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import validation from './LoginValidation';
 import axios from 'axios'
-
+import './App.css';
 
 function Login() {
   const [values,SetValues]=useState({
@@ -36,8 +36,8 @@ function Login() {
   }
 
   return (
-    <div className='d-flex justify-content-center align-items-center bg-primary vh-100'>
-      <div className='bg-white p-3 rounded w-25'>
+    <div className='d-flex justify-content-center align-items-center vh-100 background'>
+      <div className='p-3 rounded w-25 form-bg'>
         <h2>Login</h2>
         <form action="" onSubmit={handleSubmit}>
           <div className='mb-3'>
